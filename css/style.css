@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  position: relative;
+  margin-bottom: 20px;
+}
+.header a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: darkgray;
+}
+.header-logo {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.header-logo img {
+  width: 120px;
+}
+.header-nav {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.header-nav ul:not(:last-child) {
+  margin-right: 20px;
+}
+.header-nav ul li {
+  display: inline-block;
+}
+
+.top-ttl-img {
+  position: relative;
+}
+.top-ttl-img img {
+  position: absolute;
+  right: 0%;
+  width: 60%;
+  
+}
+.ttl-txt {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.ttl-txt-ttl {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 50px;
+  line-height: 100px;
+  margin-bottom: 30px;
+  color: deeppink;
+}
+.ttl-txt-content1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: deeppink;
+  letter-spacing: 2px;
+}
+.grow {
+  color: deepskyblue;
+}
+.ttl-txt-content2 {
+  font-size: 15px;
+  line-height: 150%;
+  color: gray;
+}
