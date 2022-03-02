@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- ヘッダー -->
   <header class="header">
@@ -19,15 +20,16 @@
     </div>
     <nav class="header-nav">
       <ul class="header-nav-list">
-        <li class="header-nav-item"><a href="#">News</a></li>
-        <li class="header-nav-item"><a href="#">About</a></li>
-        <li class="header-nav-item"><a href="#">Service</a></li>
-        <li class="header-nav-item"><a href="#">Blog</a></li>
-        <li class="header-nav-item"><a href="#">Company</a></li>
-        <li class="header-nav-item"><a href="#">Contact</a></li>
+        <li class="header-nav-item"><a href="#news">News</a></li>
+        <li class="header-nav-item"><a href="#about">About</a></li>
+        <li class="header-nav-item"><a href="#service">Service</a></li>
+        <li class="header-nav-item"><a href="#blog">Blog</a></li>
+        <li class="header-nav-item"><a href="#company">Company</a></li>
+        <li class="header-nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <!-- タイトル -->
     <div class="top-ttl">
@@ -44,16 +46,207 @@
     </div>
     <!-- ニュース -->
     <div class="news">
-      <p class="news-news">News</p>
-      <h1 class="news-ttl">新着情報</h1>
+      <a id="news">
+        <p class="news-news">News</p>
+      </a>
+        <h2 class="news-ttl">新着情報</h2>
       <div class="news-content">
         <p class="news-item">2021/01/01<span class="news-item-deco">ニュース</span>COACHTECHのサービスが開始されました。</p>
         <p class="news-item">2021/01/01<span class="news-item-deco">ニュース</span>COACHTECHのサービスが開始されました。</p>
         <p class="news-item">2021/01/01<span class="news-item-deco">ニュース</span>COACHTECHのサービスが開始されました。</p>
         <p class="news-item">2021/01/01<span class="news-item-deco">ニュース</span>COACHTECHのサービスが開始されました。</p>
-        <p class="news-item">2021/01/01<span class="news-item-deco">ニューす</span>COACHTECHのサービスが開始されました。</p>
+        <p class="news-item">2021/01/01<span class="news-item-deco">ニュース</span>COACHTECHのサービスが開始されました。</p>
       </div>
     </div>
+    <!-- About -->
+    <div class="about">
+      <div class="about-ttl">
+        <a id="about">
+          <p>About</p>
+        </a>
+        <h2>Technology<span class="X">×</span>Coaching</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-content-text">
+          <p>
+          株式会社estraはデジタル化が遅れている教育業界に最新のテクノロジーを導入することによって教育のDXを実現します。
+          </p><br>
+          <p>独自のオペレーションとコーチングを融合した新しい教育の仕組みにより、一人ひとりに合わせた最適な教育を提供します。</p>
+        </div>
+        <div class="about-img">
+          <img src="web-disign-test-img/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- サービス -->
+    <div class="service">
+      <div class="service-ttl">
+        <a id="service">
+          <p>Service</p>
+        </a>
+        <h2>サービス内容</h2>
+      </div>
+      <div class="service-box">
+        <div class="service-box1">
+          <div class="box1-img">
+            <img src="web-disign-test-img/service__first.svg" alt="">
+          </div>
+          <div class="box1-text">
+            <h3>教育事業</h3>
+            <p>サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+          </div>
+        </div>
+        <div class="service-box2">
+          <div class="box2-img">
+            <img src="web-disign-test-img/service__first.svg" alt="">
+          </div>
+          <div class="box2-text">
+            <h3>教育事業</h3>
+            <p>サンプルテキストがここには入ります。</p>
+            <p>サンプルテキストがここには入ります。</p>
+            <p>サンプルテキストがここには入ります。</p>
+          </div>
+        </div>
+        <div class="service-box3">
+          <div class="box3-img">
+            <img src="web-disign-test-img/service__first.svg" alt="">
+          </div>
+          <div class="box3-text">
+            <h3>教育事業</h3>
+            <p>サンプルテキストがここには入ります。</p>
+            <p>サンプルテキストがここには入ります。</p>
+            <p>サンプルテキストがここには入ります。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ブログ -->
+    <div class="blog">
+      <div class="blog-content">
+        <div class="blog-ttl">
+          <a id="blog">
+            <p>Blog</p>
+          </a>
+          <h2>ブログ</h2>
+        </div>
+        <div class="blog-cards">
+          <div class="blog-card">
+            <div class="card-top">
+              <div class="card-blog">Blog</div>
+              <div class="card-img">
+                <img src="web-disign-test-img/blog__first.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-btm">
+              <h3 class="card-ttl">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+              <div class="tag">
+                <p class="date">2021/01/01</p>
+                <p class="card-tag">#COACHTECH</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="card-top">
+              <div class="card-blog">Blog</div>
+              <div class="card-img">
+                <img src="web-disign-test-img/blog__first.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-btm">
+              <h3 class="card-ttl">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+              <div class="tag">
+                <p class="date">2021/01/01</p>
+                <p class="card-tag">#COACHTECH</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="card-top">
+              <div class="card-blog">Blog</div>
+              <div class="card-img">
+                <img src="web-disign-test-img/blog__first.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-btm">
+              <h3 class="card-ttl">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h3>
+              <div class="tag">
+                <p class="date">2021/01/01</p>
+                <p class="card-tag">#COACHTECH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-btm">
+          <a href="#" class="detail-btm">一覧ページへ</a>
+        </div>
+      </div>
+    </div>
+    <!-- 会社概要 -->
+    <div class="company">
+      <div class="company-ttl">
+        <a id="company">
+          <p>Company</p>
+        </a>
+        <h2>会社概要</h2>
+      </div>
+      <div class="company-table">
+        <table>
+          <tr>
+            <th>会社名</th>
+            <td>株式会社estra</td>
+          </tr>
+          <tr>
+            <th>代表者名</th>
+            <td>福場凜太郎</td>
+          </tr>
+          <tr>
+            <th>本社所在地</th>
+            <td>東京都渋谷区1-1-1</td>
+          </tr>
+          <tr>
+            <th>従業員数</th>
+            <td>100名</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>0120-00-0000</td>
+          </tr>
+          <tr>
+            <th>資本金</th>
+            <td>¥10,000,000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- 採用情報・インタビュー -->
+    <div class="recruit-interview">
+      <div class="picture">
+        <div class="picture-recruit">
+          <img src="web-disign-test-img/recruit.png" alt="">
+          <h3>採用情報</h3>
+        </div>
+        <div class="picture-interview">
+          <img src="web-disign-test-img/interview.png" alt="">
+          <h3>社員インタビュー</h3>
+        </div>
+      </div>
+    </div>
+    <!-- お問い合わせ -->
+    <div class="contact">
+      <div class="contact-cnt">
+        <p>株式会社estraへのお問い合わせはこちらから</p>
+        <p>|</p>
+        <div class="contact-btn">
+          <a href="#" id="contact">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; estra All Rights Reserved</p>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

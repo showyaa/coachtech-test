@@ -1,7 +1,11 @@
+/* ヘッダー */
 .header {
-  position: fixed;
+  width: 100%;
+  background-color: white;
   position: relative;
-  margin-bottom: 20px;
+  position: fixed;
+  padding: 10px 0;
+  z-index: 100;
 }
 .header a {
   text-decoration: none;
@@ -19,6 +23,7 @@
   position: absolute;
   right: 20px;
   top: 10px;
+  padding-top: 10px;
 }
 .header-nav ul:not(:last-child) {
   margin-right: 20px;
@@ -27,19 +32,24 @@
   display: inline-block;
 }
 
+
+/* タイトル */
+.top-ttl {
+  margin-bottom: 8%;
+}
 .top-ttl-img {
-  position: relative;
+  width: 60%;
+  display: block;
+  margin: 0 0 0 auto;
 }
 .top-ttl-img img {
-  position: absolute;
-  right: 0%;
-  width: 60%;
-  
+  width: 100%;
 }
 .ttl-txt {
   position: absolute;
   top: 20%;
   left: 20%;
+  width: 100%;
 }
 .ttl-txt-ttl {
   font-family: 'Gloria Hallelujah', cursive;
@@ -61,4 +71,398 @@
   font-size: 15px;
   line-height: 150%;
   color: gray;
+}
+
+
+
+/* ニュース */
+.news {
+  width: 60%;
+  margin: 0px auto 8%;
+}
+#news {
+  scroll-margin-top: 90px;
+}
+.news-news {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: deeppink;
+  margin-bottom: 15px;
+}
+.news-ttl {
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.news-content {
+  border-top: 2px solid gainsboro;
+  border-bottom: 1.5px solid gainsboro;
+}
+.news-content p {
+  border-bottom: 1px solid gainsboro;
+  padding: 20px 0;
+  color: gray;
+}
+.news-content p:first-of-type {
+  padding-top: 35px;
+}
+.news-content p:last-of-type {
+  padding-bottom: 35px;
+}
+.news-item-deco {
+  margin: 0 20px;
+  color: white;
+  background-color: deeppink;
+  padding: 0px 15px;
+  border-radius: 20px;
+}
+
+
+
+/* About */
+.about {
+  background-color: rgb(248, 244, 244);
+  margin-bottom: 8%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.about-ttl {
+  text-align: center;
+
+}
+#about {
+  scroll-margin-top: 90px;
+}
+.about-ttl p {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: deeppink;
+  margin-bottom: 20px;
+}
+.about-ttl h2 {
+  color: gray;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.X {
+  margin: 0 10px;
+}
+.about-content {
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+}
+.about-content-text {
+  width: 40%;
+  line-height: 200%;
+  color: gray;
+}
+.about-img {
+  width: 40%;
+  margin-left: 10%;
+}
+.about-img img {
+  width: 100%;
+}
+
+
+
+/*　サービス */
+.service {
+  width: 70%;
+  margin: 0 auto 8%;
+}
+#service {
+  scroll-margin-top: 90px;
+}
+.service-ttl p {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: deeppink;
+  margin-bottom: 20px;
+}
+.service-ttl h2 {
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.service-box h3 {
+  font-size: 20px;
+}
+.service .box1-img{
+  width: 120px;
+  margin: 0 auto;
+}
+.service-box1 {
+  text-align: center;
+  padding: 30px;
+}
+.service-box h3 {
+  margin: 20px 0;
+}
+.box1-text p {
+  line-height: 30px;
+  text-align: left;
+}
+.box2-text p {
+  line-height: 30px;
+}
+.box3-text p {
+  line-height: 30px;
+}
+.service .box2-img {
+  width: 120px;
+}
+.box2-img img {
+  width: 100%;
+}
+.service .box3-img {
+  width: 120px;
+}
+.box3-img img {
+  width: 100%;
+}
+.service-box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service-box3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service-box {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+.service-box1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  background-color: rgb(189, 36, 117);
+}
+.service-box2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: rgb(214, 100, 161);
+}
+.service-box3 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: rgb(253, 176, 217);
+}
+
+
+
+/* ブログ */
+.blog {
+  background-color: rgb(248, 244, 244);
+  margin: 0 auto 8%;
+  padding: 70px 0 30px;
+}
+.blog-content {
+  width: 70%;
+  margin: 0 auto;
+}
+.blog-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.blog-card {
+  width: 30%;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+#blog {
+  scroll-margin-top: 90px;
+}
+.blog-ttl p {
+  color: deeppink;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-bottom: 20px;
+}
+.blog-ttl h2 {
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.card-img {
+  position: relative;
+  z-index: 1;
+}
+.card-img img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-blog {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  background-color: deeppink;
+  border-top-left-radius: 10px;
+  padding: 7px 15px;
+}
+.card-ttl {
+}
+.tag {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.tag p {
+  display: inline-block;
+}
+.card-ttl {
+  line-height: 30px;
+}
+.card-btm {
+  color: gray;
+  padding: 15px;
+}
+.blog-btm {
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid deeppink;
+  border-radius: 30px;
+  width: 20%;
+  padding: 15px 2px;
+  text-align: center;
+  margin: 30px auto 0;
+}
+.detail-btm {
+  text-decoration: none;
+  color: deeppink;
+}
+
+
+
+/* 会社概要 */
+.company {
+  width: 60%;
+  margin: 0 auto 8%;
+}
+#company {
+  scroll-margin-top: 90px;
+}
+.company-ttl p {
+  color: deeppink;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-bottom: 20px;
+}
+.company-ttl h2 {
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.company-table {
+  display: flex;
+  justify-content: center;
+}
+.company-table table {
+  width: 100%;
+}
+.company-table table th,td {
+  border: 1px solid gray;
+  color: gray;
+  padding: 20px;
+}
+.company-table table th {
+  background-color: rgb(248, 244, 244);
+}
+
+
+
+/* 採用情報・インタビュー */
+.recruit-interview {
+  width: 100%;
+  padding-bottom: 8%;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.picture-recruit {
+  width: 50%;
+  position: relative;
+}
+.picture-interview {
+  width: 50%;
+  position: relative;
+}
+.picture img {
+  width: 100%;
+}
+.picture-recruit h3 {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.picture-interview h3 {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* お問い合わせ */
+.contact {
+  width: 70%;
+  margin: 0 auto 8%;
+  text-align: center;
+}
+.contact-cnt p:nth-child(1) {
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-cnt :nth-child(2) {
+  color: deeppink;
+  font-size: 35px;
+}
+.contact-btn {
+  width: 20%;
+  margin: 30px auto 0;
+  color: white;
+  background-color: deeppink;
+  padding: 20px 5px;
+  border-radius: 30px;
+  box-shadow: 0 7px 0 rgb(155, 4, 85);
+}
+.contact-btn a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.cntact-btn a::before {
+  position: absolute;
+  content: "";
+  background: url(web-disign-test-img/mailicon.svg) no-repeat;
+  background-size: cover;
+  top: 50%;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  transform: translate(0 50%);
+}
+
+
+
+/* フッター */
+.footer {
+  background-color: rgb(248, 244, 244);
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+  padding: 20px 0;
 }
